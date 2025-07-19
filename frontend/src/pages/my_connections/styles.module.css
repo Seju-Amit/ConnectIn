@@ -1,0 +1,226 @@
+.connectionsContainer {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.pageTitle {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: var(--primary);
+  position: relative;
+  display: inline-block;
+}
+
+.pageTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 40px;
+  height: 4px;
+  background-color: var(--primary);
+  border-radius: 2px;
+}
+
+.section {
+  margin-bottom: 30px;
+  background-color: white;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.section:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sectionTitle svg {
+  width: 20px;
+  height: 20px;
+  color: var(--primary);
+}
+
+.requestsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+@media (max-width: 640px) {
+  .requestsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.requestCard {
+  background-color: #f9f9f9;
+  border-radius: var(--radius-md);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.requestCard:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.userImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  box-shadow: var(--shadow-sm);
+}
+
+.userName {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.userUsername {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 5px 0 0;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 12px;
+}
+
+.acceptButton, .rejectButton {
+  padding: 10px 0;
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  cursor: pointer;
+  flex: 1;
+  border: none;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.acceptButton {
+  background-color: var(--primary);
+  color: white;
+}
+
+.acceptButton:hover {
+  background-color: var(--primary-dark);
+}
+
+.rejectButton {
+  background-color: white;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+}
+
+.rejectButton:hover {
+  background-color: #f0f0f0;
+  color: var(--text-primary);
+}
+
+.connectionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+@media (max-width: 640px) {
+  .connectionsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.connectionCard {
+  background-color: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.3s ease;
+}
+
+.connectionCard:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: transparent;
+}
+
+.connectionImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  box-shadow: var(--shadow-sm);
+}
+
+.connectionInfo {
+  flex: 1;
+}
+
+.connectionName {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.connectionUsername {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 5px 0 0;
+}
+
+.emptyMessage {
+  color: var(--text-secondary);
+  font-style: italic;
+  text-align: center;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.emptyMessage svg {
+  width: 40px;
+  height: 40px;
+  color: var(--text-tertiary);
+  opacity: 0.7;
+}

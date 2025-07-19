@@ -1,0 +1,207 @@
+.profileHeader {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.banner {
+  height: 200px;
+  background: linear-gradient(to right, #0a66c2, #0077b5);
+  position: relative;
+}
+
+.bannerOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.profileImageContainer {
+  position: absolute;
+  top: 130px;
+  left: 30px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid white;
+  overflow: hidden;
+  background-color: white;
+  z-index: 1;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.profileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profileInfo {
+  padding: 80px 30px 30px;
+}
+
+.profileName {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.profileUsername {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 15px;
+}
+
+.profileBio {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: rgba(0, 0, 0, 0.9);
+  line-height: 1.5;
+}
+
+.profilePosition {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0a66c2;
+  margin-bottom: 20px;
+}
+
+.statsContainer {
+  display: flex;
+  gap: 30px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.statValue {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0a66c2;
+  margin: 0;
+}
+
+.statLabel {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 5px 0 0;
+}
+
+.editPictureButton {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.editPictureButton:hover {
+  background-color: #f0f0f0;
+}
+
+.editBannerButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.editBannerButton:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.editPictureForm, .editBannerForm {
+  position: absolute;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  z-index: 10;
+}
+
+.editPictureForm {
+  top: 100%;
+  left: 0;
+  width: 250px;
+}
+
+.editBannerForm {
+  top: 50px;
+  right: 10px;
+  width: 300px;
+}
+
+.fileInput {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.editButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.saveButton, .cancelButton {
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  flex: 1;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.saveButton {
+  background-color: #0a66c2;
+  color: white;
+}
+
+.saveButton:hover {
+  background-color: #084e96;
+}
+
+.saveButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.cancelButton {
+  background-color: white;
+  color: #666;
+  border: 1px solid #ddd;
+}
+
+.cancelButton:hover {
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,83 @@
+.workHistoryCard {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.workHistoryTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.9);
+  padding: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.workList {
+  padding: 12px;
+}
+
+.workItem {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  transition: background-color 0.2s;
+}
+
+.workItem:last-child {
+  margin-bottom: 0;
+}
+
+.workItem:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.companyLogo {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #0a66c2, #004182);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 18px;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.workInfo {
+  flex: 1;
+}
+
+.workTitle {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.workDuration {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .workHistoryContainer {
+    margin-bottom: 1rem;
+  }
+  
+  .workItem {
+    padding: 0.625rem;
+  }
+  
+  .companyLogo {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}

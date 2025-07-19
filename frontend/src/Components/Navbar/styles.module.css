@@ -1,0 +1,324 @@
+.container {
+  background-color: var(--white);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 0;
+  height: 60px;
+  border-bottom: 1px solid var(--border);
+}
+
+.connectIn {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #0077b5 0%, #0a66c2 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 0.2s ease;
+}
+
+.connectIn:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 1.5rem;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.navLogo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navLogo img {
+  height: 34px;
+  width: auto;
+  cursor: pointer;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.authButtons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.userName {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-primary);
+}
+
+.buttonJoin {
+  padding: 0.5rem 1.25rem;
+  background-color: var(--primary);
+  color: white;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border: none;
+}
+
+.buttonJoin:hover {
+  background-color: var(--primary-dark);
+}
+
+.buttonLogout {
+  padding: 0.5rem 1.25rem;
+  background-color: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.buttonLogout:hover {
+  background-color: var(--primary-light);
+}
+
+.buttonOutline {
+  padding: 0.5rem 1.25rem;
+  background-color: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.buttonOutline:hover {
+  background-color: var(--primary-light);
+}
+
+.userGreeting {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-right: 0.25rem;
+}
+
+/* Mobile menu */
+.mobileMenuButton {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .mobileMenuButton {
+    display: none;
+  }
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+}
+
+.navLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  color: #666;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.navLink:hover {
+  color: #000;
+}
+
+.navLink svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.navLinkActive {
+  color: #0a66c2;
+}
+
+.navLinkActive:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #0a66c2;
+}
+
+.profileDropdown {
+  position: relative;
+}
+
+/* Add this to your existing styles */
+.profileButton {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-right: 0.75rem;
+    background-color: var(--white);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.profileButton:hover {
+    background-color: rgba(10, 102, 194, 0.08);
+}
+
+.profileAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 280px;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1), 0 5px 20px rgba(0, 0, 0, 0.2);
+  padding: 0.75rem 0;
+  z-index: 10;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.dropdownHeader {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.dropdownName {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.dropdownEmail {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.dropdownItem {
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dropdownItem:hover {
+  background-color: #f3f2ef;
+}
+
+.dropdownItem svg {
+  margin-right: 0.75rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #666;
+}
+
+.buttonJoin {
+  background-color: #0a66c2;
+  color: white;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.625rem 1.25rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.buttonJoin:hover {
+  background-color: #084e8e;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navBar {
+    padding: 0 1rem;
+  }
+  
+  .navSearch {
+    display: none;
+  }
+  
+  .navLink span {
+    display: none;
+  }
+  
+  .navLink svg {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .connectIn {
+    font-size: 1.25rem;
+  }
+  
+  .navLogo img {
+    height: 28px;
+  }
+  
+  .navBar {
+    padding: 0 0.5rem;
+  }
+  
+  .navLink {
+    padding: 0.5rem;
+  }
+}
+.clickable {
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.clickable:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}

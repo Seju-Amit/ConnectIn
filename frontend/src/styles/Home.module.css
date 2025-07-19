@@ -1,0 +1,111 @@
+.container {
+    font-family: "Poppins";
+    padding: "1.2rem";
+}
+
+
+.mainContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding-inline: 2rem;
+  height: 80vh;
+}
+
+
+.mainContainer_Left{
+    flex: 0.5;
+}
+
+.mainContainer_Right{
+    flex: 0.5;
+}
+
+
+.mainContainer_Left > p:nth-child(1){
+    font-size: 2.0rem;
+    background: -webkit-repeating-linear-gradient(45deg , rgb(120, 143, 255), hsl(227, 100%, 22%));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* animation: animationHomepgeBreathEffect 4s infinite; */
+}
+
+@keyframes animationHomepgeBreathEffect {
+    0% {
+        background: -webkit-repeating-linear-gradient(0deg , black, rgb(241, 217, 80));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    10% {
+        background: -webkit-repeating-linear-gradient(90deg , black, rgb(241, 217, 80));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    20% {
+        background: -webkit-repeating-linear-gradient(180deg , black, rgb(241, 217, 80));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    30% {
+        background: -webkit-repeating-linear-gradient(270deg , black, rgb(241, 217, 80));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    40% {
+        background: -webkit-repeating-linear-gradient(360deg , rgb(241, 217, 80), black);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    50% {
+        background: -webkit-repeating-linear-gradient(450deg , rgb(241, 217, 80), black);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    60% {
+        background: -webkit-repeating-linear-gradient(540deg , rgb(241, 217, 80), black);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    70% {
+        background: -webkit-repeating-linear-gradient(630deg , rgb(241, 217, 80), black);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    80% {
+        background: -webkit-repeating-linear-gradient(720deg , rgb(241, 217, 80), black);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    90% {
+        background: -webkit-repeating-linear-gradient(810deg , rgb(241, 217, 80), black);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    100% {
+        background: -webkit-repeating-linear-gradient(900deg , rgb(241, 217, 80), black);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.mainContainer_Left > p:nth-child(2){
+    color: #4d4d4d;
+    font-size: 1.3rem;
+}
+
+.mainContainer_Left > div {
+    width: fit-content;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s;
+    margin-top: 0.8rem;
+    font-size: 1.4rem;
+    background-color: white;
+    color: rgb(39, 74, 192);
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border: rgb(0, 136, 255) solid 1px;
+
+}
